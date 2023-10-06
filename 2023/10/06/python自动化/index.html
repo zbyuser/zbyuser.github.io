@@ -1,0 +1,486 @@
+<!DOCTYPE html><html lang="zn-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>python自动化 | ZBY成长记</title><meta name="author" content="ZBY,3083402283@qq.com"><meta name="copyright" content="ZBY"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="GUI自动化处理 GUI自动化就是写程序直接控制键盘和鼠标。这些程序可以控制其他应用，向它们发送虚拟的击键和鼠标点击，就像你自己坐在计算机前与应用交互一样。这种技术被称为“图形用户界面自动化”，或简称为“GUI 自动化”。有了 GUI 自动化，你的程序就像一个活人用户坐在计算机前一样，能做任何事情，除了将咖啡泼在键盘上。  什么是GUI自动化 也可以将 GUI 自动化看成是对一个机械臂编程。你可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python自动化">
+<meta property="og:url" content="http://example.com/2023/10/06/python%E8%87%AA%E5%8A%A8%E5%8C%96/index.html">
+<meta property="og:site_name" content="ZBY成长记">
+<meta property="og:description" content="GUI自动化处理 GUI自动化就是写程序直接控制键盘和鼠标。这些程序可以控制其他应用，向它们发送虚拟的击键和鼠标点击，就像你自己坐在计算机前与应用交互一样。这种技术被称为“图形用户界面自动化”，或简称为“GUI 自动化”。有了 GUI 自动化，你的程序就像一个活人用户坐在计算机前一样，能做任何事情，除了将咖啡泼在键盘上。  什么是GUI自动化 也可以将 GUI 自动化看成是对一个机械臂编程。你可以">
+<meta property="og:locale" content="zn_CN">
+<meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg">
+<meta property="article:published_time" content="2023-10-06T04:55:11.763Z">
+<meta property="article:modified_time" content="2023-10-06T05:10:37.048Z">
+<meta property="article:author" content="ZBY">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/10/06/python%E8%87%AA%E5%8A%A8%E5%8C%96/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'python自动化',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-10-06 13:10:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="ZBY成长记"><span class="site-name">ZBY成长记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">python自动化</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-10-06T04:55:11.763Z" title="Created 2023-10-06 12:55:11">2023-10-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-10-06T05:10:37.048Z" title="Updated 2023-10-06 13:10:37">2023-10-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="python自动化"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="GUI自动化处理"><a href="#GUI自动化处理" class="headerlink" title="GUI自动化处理"></a>GUI自动化处理</h1><ul>
+<li>GUI自动化就是写程序直接控制键盘和鼠标。这些程序可以控制其他应用，向它们发送虚拟的击键和鼠标点击，就像你自己坐在计算机前与应用交互一样。这种技术被称为“图形用户界面自动化”，或简称为“GUI 自动化”。有了 GUI 自动化，你的程序就像一个活人用户坐在计算机前一样，能做任何事情，除了将咖啡泼在键盘上。</li>
+</ul>
+<h3 id="什么是GUI自动化"><a href="#什么是GUI自动化" class="headerlink" title="什么是GUI自动化"></a>什么是GUI自动化</h3><ul>
+<li>也可以将 GUI 自动化看成是对一个机械臂编程。你可以对机械臂编程，让它敲键盘或移动鼠标。对于涉及许多无脑点击或填表的任务，这种技术特别有用。</li>
+</ul>
+<h3 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h3><ul>
+<li><p>安装 pyautogui 模块</p>
+<ul>
+<li><p>pyautogui 模块可以向 Windows、OS X 和 Linux 发送虚拟按键和鼠标点击。根据你使用的操作系统，在安装 pyautogui 之前，可能需要安装一些其他模块（称为依赖关系）</p>
+<ul>
+<li>在 Windows 上，不需要安装其他模块。</li>
+<li>在 OS X 上，运行 sudo pip3 install pyobjc-framework-Quartz，sudo pip3 install pyobjc-core，然后 sudo pip3 install pyobjc。</li>
+<li>Linux 上，运行 sudo pip3 install python3-xlib，sudo apt-get install scrot，sudo apt-get install python3-tk，以及 sudo apt-get install python3-dev（Scrot 是PyAutoGUI 使用的屏幕快照程序）。</li>
+<li>在这些依赖安装后，运行 pip install pyautogui</li>
+<li>在这些依赖安装后，运行 pip install pyautogui</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="控制鼠标移动"><a href="#控制鼠标移动" class="headerlink" title="控制鼠标移动"></a>控制鼠标移动</h3><ul>
+<li>我们主要学习如何利用 pyautogui 移动鼠标，追踪它在屏幕上的位置，但首先需要理解 pyautogui 如何处理坐标</li>
+</ul>
+<p>pyautogui坐标的处理</p>
+<ul>
+<li><p>pyautogui 的鼠标函数使用 x、y 坐标。原点的 x、y 都是零，在屏幕的左上角。向右 x 坐标增加，向下 y 坐标增加。所有坐标都是正整数，没有负数坐标。</p>
+</li>
+<li><p>分辨率</p>
+<ul>
+<li>分辨率是屏幕的宽和高有多少像素。如果屏幕的分辨率设置为 1920 × 1080，那么左上角的坐标是（0，0），右下角的坐标是（1919，1079）。</li>
+</ul>
+</li>
+<li><p>编程获取电脑屏幕的宽和高的像素数</p>
+<ul>
+<li>pyautogui.size() 函数返回两个整数的元组，包含屏幕的宽和高的像素数</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line">width, height = pyautogui.size()</span><br><span class="line"><span class="built_in">print</span>(width,height)</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p>移动鼠标</p>
+<ul>
+<li>理解了屏幕坐标，我们就可以来移动鼠标。</li>
+<li>pyautogui.moveTo() 函数将鼠标立即移动到屏幕的指定位置。<ul>
+<li>表示 x、y 坐标的整数值分别构成了函数的第一个和第二个参数。</li>
+<li>可选的 duration 整数或浮点数关键字参数，指定了将鼠标移到目的位置所需的秒数。如果不指定，默认值是零，表示立即移动（在 PyAutoGUI 函数中，所有的 duration 关键字参数都是可选的）。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    pyautogui.moveTo(<span class="number">100</span>, <span class="number">100</span>, duration=<span class="number">0.25</span>)</span><br><span class="line">    pyautogui.moveTo(<span class="number">200</span>, <span class="number">100</span>, duration=<span class="number">0.25</span>)</span><br><span class="line">    pyautogui.moveTo(<span class="number">200</span>, <span class="number">200</span>, duration=<span class="number">0.25</span>)</span><br><span class="line">    pyautogui.moveTo(<span class="number">100</span>, <span class="number">200</span>, duration=<span class="number">0.25</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>pyautogui.moveRel() 函数相对于当前的位置移动鼠标<ul>
+<li>该函数可以接受 3 个参数：向右水平移动多少个像素，向下垂直移动多少个像素，以及（可选的）花多少时间完成移动。为第一第二个参数提供负整数，鼠标将向左或向上移动。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">    pyautogui.moveRel(<span class="number">100</span>, <span class="number">0</span>, duration=<span class="number">0.25</span>)</span><br><span class="line">    pyautogui.moveRel(<span class="number">0</span>, <span class="number">100</span>, duration=<span class="number">0.25</span>)</span><br><span class="line">    pyautogui.moveRel(-<span class="number">100</span>, <span class="number">0</span>, duration=<span class="number">0.25</span>)</span><br><span class="line">    pyautogui.moveRel(<span class="number">0</span>, -<span class="number">100</span>, duration=<span class="number">0.25</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>获取鼠标位置<ul>
+<li>通过调用 pyautogui.position() 函数，可以确定鼠标当前的位置。它将返回函数调用时，鼠标 x、y 坐标的元组。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyautogui.position()</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="控制鼠标交互"><a href="#控制鼠标交互" class="headerlink" title="控制鼠标交互"></a>控制鼠标交互</h3><p>既然我们知道了如何移动鼠标，弄清楚了它在屏幕上的位置，就可以开始点击、拖动和滚动鼠标。</p>
+<h4 id="点击鼠标"><a href="#点击鼠标" class="headerlink" title="点击鼠标"></a>点击鼠标</h4><ul>
+<li><p>鼠标点击</p>
+<ul>
+<li>要向计算机发送虚拟的鼠标点击，就调用 pyautogui.click() 方法。默认情况下，点击将使用鼠标左键，点击发生在鼠标当前所在位置。如果希望点击在鼠标当前位置以外的地方发生，可以传入 x、y 坐标作为可选的第一第二参数。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#实现：鼠标移到屏幕左上角的位置，并点击一次。完整的“点击”是指按下鼠标按键，然后放开，同时不移动位置</span></span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line">pyautogui.click(<span class="number">10</span>, <span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>指定鼠标按键<ul>
+<li>如果想指定鼠标按键，就加入 button 关键字参数，值分别为 ‘left’、’middle’或 ‘right’。例如，pyautogui.click（100，150，button&#x3D;’left’）将在坐标（100，150）处点击鼠标左键。而 pyautogui.click（200，250，button&#x3D;’right’）将在坐标（200，250）处点击右键。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line">pyautogui.click(<span class="number">600</span>, <span class="number">509</span>,button=<span class="string">&#x27;right&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>实现点击的其他方法<ul>
+<li>pyautogui. mouseDown()<ul>
+<li>只是按下鼠标按键</li>
+</ul>
+</li>
+<li>pyautogui.mouseUp()<ul>
+<li>只是释放鼠标按键</li>
+</ul>
+</li>
+<li>pyautogui.doubleClick()<ul>
+<li>执行双击鼠标左键</li>
+</ul>
+</li>
+<li>pyautogui.rightClick()，pyautogui.middleClick()<ul>
+<li>分别执行双击右键和双击中键</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="拖动鼠标"><a href="#拖动鼠标" class="headerlink" title="拖动鼠标"></a>拖动鼠标</h4><p>“拖动”意味着移动鼠标，同时按住一个按键不放。例如，可以通过拖动文件图标，在文件夹之间移动文件等</p>
+<ul>
+<li><p>具体操作</p>
+<ul>
+<li><p>PyAutoGUI 提供了 pyautogui.dragTo() 和 pyautogui.dragRel() 函数，将鼠标拖动到一个新的位置，或相对当前位置的位置。 dragTo() 和 dragRel() 的参数与moveTo() 和 moveRel() 相同：x 坐标&#x2F;水平移动，y 坐标&#x2F;垂直移动，以及可选的时间间隔（在 OS X 上，如果鼠标移动太快，拖动会不对，所以建议提供 duration 关键字参数）。</p>
+</li>
+<li><p>测试</p>
+<ul>
+<li>请打开一个绘图应用，如 Windows 上的 Paint，OS X 上的Paintbrush，或 Linux 上的 GNU Paint（如果没有绘图应用，可以使用在线绘图，网址是 <a target="_blank" rel="noopener" href="http://sumopaint.com/%EF%BC%89">http://sumopaint.com/）</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui, time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.click()</span><br><span class="line">distance = <span class="number">200</span></span><br><span class="line"><span class="keyword">while</span> distance &gt; <span class="number">0</span>:</span><br><span class="line">    pyautogui.dragRel(distance, <span class="number">0</span>, duration=<span class="number">0.2</span>,button=<span class="string">&#x27;left&#x27;</span>) <span class="comment"># move right</span></span><br><span class="line">    distance = distance - <span class="number">5</span></span><br><span class="line">    pyautogui.dragRel(<span class="number">0</span>, distance, duration=<span class="number">0.2</span>,button=<span class="string">&#x27;left&#x27;</span>) <span class="comment"># move down</span></span><br><span class="line">    pyautogui.dragRel(-distance, <span class="number">0</span>, duration=<span class="number">0.2</span>,button=<span class="string">&#x27;left&#x27;</span>) <span class="comment"># move left</span></span><br><span class="line">    distance = distance - <span class="number">5</span></span><br><span class="line">    pyautogui.dragRel(<span class="number">0</span>, -distance, duration=<span class="number">0.2</span>,button=<span class="string">&#x27;left&#x27;</span>) <span class="comment"># move up</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注意：如果出现如下报错信息<ul>
+<li>AssertionError: button argument not in (‘left’, ‘middle’, ‘right’)</li>
+<li>则在函数中添加button参数指定鼠标按键即可</li>
+</ul>
+</li>
+</ul>
+<h4 id="滚动鼠标"><a href="#滚动鼠标" class="headerlink" title="滚动鼠标"></a>滚动鼠标</h4><ul>
+<li>最后一个 pyautogui 鼠标函数是 scroll()。你向它提供一个整型参数，说明向上或向下滚动多少单位，滚动发生在鼠标的当前位置。<ul>
+<li>单位的意义在每个操作系统和应用上不一样，所以你必须试验，看看在你的情况下滚动多远。</li>
+<li>传递正整数表示向上滚动，传递负整数表示向下滚动</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui, time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.scroll(-<span class="number">300</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="处理屏幕"><a href="#处理屏幕" class="headerlink" title="处理屏幕"></a>处理屏幕</h3><p>你的 GUI 自动化程序没有必要盲目地点击和输入。pyautogui 拥有屏幕快照的功能，可以根据当前屏幕的内容创建图形文件。</p>
+<ul>
+<li>注意：<ul>
+<li>在 Linux 计算机上，需要安装 scrot 程序，才能在 pyautogui 中使用屏幕快照功能。在终端窗口中，执行 sudo apt-get install scrot，安装该程序。如果你使用 Windows或 OS X，就跳过这一步</li>
+</ul>
+</li>
+</ul>
+<h4 id="获取屏幕快照"><a href="#获取屏幕快照" class="headerlink" title="获取屏幕快照"></a>获取屏幕快照</h4><ul>
+<li>要在 Python 中获取屏幕快照，就调用 pyautogui.screenshot() 函数,函数将返回包含一个屏幕快照的 Image 对象</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line">im = pyautogui.screenshot()</span><br><span class="line">im.save(<span class="string">&#x27;./123.png&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>Image对象getpixel()<ul>
+<li>getpixel() 函数传入坐标元组它将告诉你图像中这些坐标处的像素颜色。getpixel() 函数的返回值是一个 RGB 元组，包含 4 个整数，表示像素的红绿蓝值和透明度。</li>
+<li>这就是你的程序“看到”当前屏幕上内容的方法。</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line">im.getpixel((<span class="number">23</span>,<span class="number">560</span>))</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="分析屏幕快照"><a href="#分析屏幕快照" class="headerlink" title="分析屏幕快照"></a>分析屏幕快照</h4><ul>
+<li><p>举个栗子：</p>
+<ul>
+<li>假设你的 GUI 自动化程序中，有一步是点击灰色按钮。在调用 click() 方法之前，你可以获取屏幕快照，查看脚本要点击处的像素。如果它的颜色和灰色按钮不一样，那么程序就知道出问题了。也许窗口发生了意外的移动，或者弹出式对话框挡住了该按钮。这时，不应该继续（可能会点击到错误的东西，造成严重破坏），程序可以“看到”它没有点击在正确的东西上，并自行停止。</li>
+</ul>
+</li>
+<li><p>pixelMatchesColor() 函数</p>
+<ul>
+<li>参数：<ul>
+<li>第一和第二个参数是整数，对应 x 和 y 坐标。第三个参数是一个元组，包含 3 个整数，是屏幕像素必须匹配的 RGB 颜色</li>
+</ul>
+</li>
+<li>返回值：<ul>
+<li>如果屏幕上指定的 x、y 坐标处的像素与指定的颜色匹配，PyAutoGUI 的pixelMatchesColor() 函数将返回 True。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line">im = pyautogui.screenshot()</span><br><span class="line"><span class="built_in">print</span>(im.getpixel((<span class="number">500</span>, <span class="number">200</span>)))</span><br><span class="line">result = pyautogui.pixelMatchesColor(<span class="number">300</span>, <span class="number">200</span>, (<span class="number">248</span>, <span class="number">248</span>, <span class="number">248</span>))</span><br><span class="line"><span class="built_in">print</span>(result)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="图像识别"><a href="#图像识别" class="headerlink" title="图像识别"></a>图像识别</h3><ul>
+<li><p>opencv简介</p>
+<ul>
+<li>Opencv（Open Source Computer Vision Library）是一个基于开源发行的跨平台计算机视觉库，它实现了图像处理和计算机视觉方面的很多通用算法，已成为计算机视觉领域最有力的研究工具。</li>
+<li>在这里我们要区分两个概念：图像处理和计算机视觉的区别：<ul>
+<li>图像处理侧重于“处理”图像–如增强，还原，去噪，分割等等；</li>
+<li>而计算机视觉重点在于使用计算机来模拟人的视觉，因此模拟才是计算机视觉领域的最终目标。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>opencv环境安装：</p>
+<ul>
+<li>pip install opencv-python&#x3D;&#x3D;3.4.5.20</li>
+</ul>
+</li>
+<li><p>测试</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br></pre></td></tr></table></figure>
+
+<p>如果事先不知道应该点击哪里，怎么办？可以使用图像识别。向PyAutoGUI 提供希望点击的图像，让它去弄清楚坐标。</p>
+<ul>
+<li>操作<ul>
+<li>打开腾讯会议，识别【加入会议】按钮，对其进行点击操作</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line"><span class="comment">#获取带有腾讯会议的屏幕快照且保存到本地</span></span><br><span class="line">im = pyautogui.screenshot()</span><br><span class="line">im.save(<span class="string">&#x27;screen.png&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#基于cv2读取照片</span></span><br><span class="line">screen = cv2.imread(<span class="string">&#x27;./screen.png&#x27;</span>)</span><br><span class="line">joinMeeting = cv2.imread(<span class="string">&#x27;./joinMeeting.png&#x27;</span>)</span><br><span class="line"><span class="comment">#在屏幕快照中对比加入会议按钮照片，定位其准确位置</span></span><br><span class="line">result = cv2.matchTemplate(joinMeeting,screen, cv2.TM_CCOEFF_NORMED)</span><br><span class="line"><span class="comment">#result是一个二维列表，列表中最大值元素的位置就是我们对比后相似度最高的图片【最上角】位置</span></span><br><span class="line"><span class="built_in">print</span>(result)</span><br><span class="line"></span><br><span class="line"><span class="comment">#minMaxLoc返回一个元组，其中三个元素，以此为最不相似点分数，最相似点分数，最不相似点位置坐标，最相似点位置坐标</span></span><br><span class="line">pos_start = cv2.minMaxLoc(result)[<span class="number">3</span>] <span class="comment">#获取最相似点相似坐标</span></span><br><span class="line"><span class="built_in">print</span>(pos_start) </span><br><span class="line"><span class="comment"># x = pos_start[0]</span></span><br><span class="line"><span class="comment"># y = pos_start[1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#定位到点击图片的中间位置</span></span><br><span class="line">x = <span class="built_in">int</span>(pos_start[<span class="number">0</span>]) + <span class="built_in">int</span>(joinMeeting.shape[<span class="number">1</span>] / <span class="number">2</span>)</span><br><span class="line">y = <span class="built_in">int</span>(pos_start[<span class="number">1</span>]) + <span class="built_in">int</span>(joinMeeting.shape[<span class="number">0</span>] / <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">pyautogui.click(x,y)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="控制键盘"><a href="#控制键盘" class="headerlink" title="控制键盘"></a>控制键盘</h3><p>pyautogui 也有一些函数向计算机发送虚拟按键，让你能够填充表格，或在应用中输入文本。</p>
+<h4 id="通过键盘发送一个字符串"><a href="#通过键盘发送一个字符串" class="headerlink" title="通过键盘发送一个字符串"></a>通过键盘发送一个字符串</h4><ul>
+<li>pyautogui.typewrite() 函数向计算机发送虚拟按键。这些按键产生什么效果，取决于当前获得焦点的窗口和文本输入框。可能需要先向文本输入框发送一次鼠标点击，确保它获得焦点。<ul>
+<li>举一个简单的例子，让我们用 Python 自动化在文件编辑窗口中输入 Helloworld!。首先，打开一个新的文件编辑窗口，将它放在屏幕的左上角，以便pyautogui 点击正确的位置，让它获得焦点</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.click(<span class="number">300</span>, <span class="number">300</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.typewrite(<span class="string">&#x27;Hello world!&#x27;</span>,interval=<span class="number">0.25</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>typewrite()参数介绍：<ul>
+<li>message：键盘录入的内容<ul>
+<li>字符串</li>
+<li>列表：键字符串的列表<ul>
+<li>pyautogui.typewrite([‘a’, ‘b’, ‘left’, ‘left’, ‘X’, ‘Y’])</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>interval：在每个字符之间添加短时间暂停</li>
+<li>注意：对于 A 或!这样的字符，pyautogui 将自动模拟按住 Shift 键。</li>
+</ul>
+</li>
+</ul>
+<h4 id="键名"><a href="#键名" class="headerlink" title="键名"></a>键名</h4><p>不是所有的键都很容易用单个文本字符来表示。例如，如何把 Shift 键或左箭头键表示为单个字符？在 PyAutoGUI 中，这些键表示为短的字符值：’esc’ 表示 Esc 键，’enter’ 表示 Enter。</p>
+<p><img src="/.com//mark_down\cs_markdown\images\Snipaste_2023-08-21_10-45-51.png" alt="Snipaste_2023-08-21_10-45-51"></p>
+<p><img src="/.com//mark_down\cs_markdown\images\Snipaste_2023-08-21_10-46-11.png" alt="Snipaste_2023-08-21_10-46-11"></p>
+<ul>
+<li>press按下按键</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.click(<span class="number">300</span>, <span class="number">300</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.typewrite(<span class="string">&#x27;Hello world!&#x27;</span>,interval=<span class="number">0.25</span>)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">pyautogui.press(<span class="string">&#x27;enter&#x27;</span>)</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.typewrite(<span class="string">&#x27;Hello world!&#x27;</span>,interval=<span class="number">0.25</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="按下和释放键盘"><a href="#按下和释放键盘" class="headerlink" title="按下和释放键盘"></a>按下和释放键盘</h4><p>就像 mouseDown() 和 mouseUp() 函数一样，pyautogui.keyDown() 和 pyautogui.keyUp() 将向计算发送虚拟的按键和释放。方便起见，pyautogui 提供了pyautogui.press() 函数，它调用这两个函数，模拟完整的击键。</p>
+<ul>
+<li>例子：打印出美元字符（通过按住 Shift 键并按 4 得到）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.keyDown(<span class="string">&#x27;shift&#x27;</span>)</span><br><span class="line">pyautogui.press(<span class="string">&#x27;4&#x27;</span>)</span><br><span class="line">pyautogui.keyUp(<span class="string">&#x27;shift&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="热键组合"><a href="#热键组合" class="headerlink" title="热键组合"></a>热键组合</h4><ul>
+<li>“热键”或“快捷键”是一种按键组合，它调用某种应用功能。拷贝选择内容的常用热键是 Ctrl-C。用户按住Ctrl键，然后按C键，然后释放C和Ctrl键。<ul>
+<li>要用pyautogui的keyDown() 和keyUp() 函数来做到这一点</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.keyDown(<span class="string">&#x27;command&#x27;</span>)</span><br><span class="line">pyautogui.press(<span class="string">&#x27;v&#x27;</span>)</span><br><span class="line">pyautogui.keyUp(<span class="string">&#x27;command&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>这相当复杂。作为替代，可以使用 pyautogui.hotkey() 函数，它接受多个键字符串参数，按顺序按下，再按相反的顺序释放。例如对于 Ctrl-C，代码就像下面这样简单：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line">pyautogui.hotkey(<span class="string">&#x27;command&#x27;</span>, <span class="string">&#x27;v&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="项目：微信自动化"><a href="#项目：微信自动化" class="headerlink" title="项目：微信自动化"></a>项目：微信自动化</h3><ul>
+<li>注意：微信官方给出的pywx已然失效，则除了GUI别无他法自动化操作微信了。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pyperclip <span class="comment">#用于复制粘贴的模块</span></span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line">time.sleep(<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#从屏幕screen中找到source的位置坐标(找到微信搜索框的位置)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">findImg</span>():</span><br><span class="line">    im = pyautogui.screenshot()</span><br><span class="line">    im.save(<span class="string">&#x27;screen.png&#x27;</span>)</span><br><span class="line">    screen = cv2.imread(<span class="string">&#x27;./screen.png&#x27;</span>)</span><br><span class="line">    joinMeeting = cv2.imread(<span class="string">&#x27;./wechat.png&#x27;</span>)</span><br><span class="line">    result = cv2.matchTemplate(joinMeeting,screen, cv2.TM_CCOEFF_NORMED)</span><br><span class="line">    pos_start = cv2.minMaxLoc(result)[<span class="number">3</span>] <span class="comment">#获取最相似点相似坐标</span></span><br><span class="line">    x = <span class="built_in">int</span>(pos_start[<span class="number">0</span>]) + <span class="built_in">int</span>(joinMeeting.shape[<span class="number">1</span>] / <span class="number">2</span>)</span><br><span class="line">    y = <span class="built_in">int</span>(pos_start[<span class="number">1</span>]) + <span class="built_in">int</span>(joinMeeting.shape[<span class="number">0</span>] / <span class="number">2</span>)</span><br><span class="line">    <span class="keyword">return</span> x,y</span><br><span class="line"></span><br><span class="line"><span class="comment">#向搜索框中录入要查找的好友名称:name好友名称，x，y搜索框位置</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">send_name_to_search</span>(<span class="params">x,y,name</span>):</span><br><span class="line">    pyautogui.click(x,y)</span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    <span class="comment">#赋值好友名称</span></span><br><span class="line">    pyperclip.copy(name)</span><br><span class="line">    <span class="comment">#粘贴复制内容</span></span><br><span class="line">    pyautogui.hotkey(<span class="string">&#x27;command&#x27;</span>, <span class="string">&#x27;v&#x27;</span>)</span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    pyautogui.hotkey(<span class="string">&#x27;enter&#x27;</span>)</span><br><span class="line">    <span class="comment">#向下移动100个像素定位到搜索到第一个好友位置点击</span></span><br><span class="line"><span class="comment">#     pyautogui.moveTo(x, y+80)</span></span><br><span class="line"><span class="comment">#     pyautogui.click(x, y+80)</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"><span class="comment">#向好友发送消息</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">send_msg</span>(<span class="params">msg</span>):</span><br><span class="line">    pyperclip.copy(msg)</span><br><span class="line">    pyautogui.hotkey(<span class="string">&#x27;command&#x27;</span>, <span class="string">&#x27;v&#x27;</span>)</span><br><span class="line">    pyautogui.hotkey(<span class="string">&#x27;enter&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"><span class="comment">#主要程序</span></span><br><span class="line">x,y = findImg()</span><br><span class="line">send_name_to_search(x,y,<span class="string">&#x27;传输&#x27;</span>)</span><br><span class="line">send_msg(<span class="string">&#x27;i love learn Python!!!&#x27;</span>)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">send_msg(<span class="string">&#x27;i love learn Python!!!&#x27;</span>) </span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">send_name_to_search(x,y,<span class="string">&#x27;站山&#x27;</span>)</span><br><span class="line">send_msg(<span class="string">&#x27;GUI测试，无需理会&#x27;</span>)</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">send_msg(<span class="string">&#x27;GUI测试，无需理会&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="监视程序"><a href="#监视程序" class="headerlink" title="监视程序"></a>监视程序</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="keyword">import</span> yagmail</span><br><span class="line"><span class="keyword">import</span> schedule</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">run</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;开始监视......&#x27;</span>)</span><br><span class="line">    <span class="comment">#截取屏幕图片</span></span><br><span class="line">    myScreenshot = pyautogui.screenshot()</span><br><span class="line">    myScreenshot.save(<span class="string">r&#x27;screen.png&#x27;</span>) </span><br><span class="line">    <span class="comment">#基于cv2打开电脑摄像头，捕获实施照片</span></span><br><span class="line">    cap = cv2.VideoCapture(<span class="number">0</span>)</span><br><span class="line">    ret, frame = cap.read()</span><br><span class="line">    time.sleep(<span class="number">3</span>)</span><br><span class="line">    cv2.imwrite(<span class="string">&#x27;photo.jpg&#x27;</span>, frame)</span><br><span class="line">    <span class="comment">#关闭摄像头</span></span><br><span class="line">    cap.release()</span><br><span class="line">    </span><br><span class="line">    received = [<span class="string">&#x27;zhangxiaobo@oldboyedu.com&#x27;</span>]  </span><br><span class="line">    yag = yagmail.SMTP(user=<span class="string">&#x27;328410948@qq.com&#x27;</span>, host=<span class="string">&#x27;smtp.qq.com&#x27;</span>)</span><br><span class="line">    contents = [<span class="string">&#x27;&lt;b&gt; &lt;font color=&quot;#FF1493&quot; size=&quot;10&quot;&gt; Bobo大人您好，一切都在监视中，尽情放心！&lt;/font&gt; &lt;/b&gt;&#x27;</span>,</span><br><span class="line">        <span class="string">&quot;screen.png&quot;</span>,</span><br><span class="line">        <span class="string">&#x27;photo.jpg&#x27;</span> ]</span><br><span class="line"></span><br><span class="line">    yag.send(received, <span class="string">&#x27;来自小鬼侦探的报告&#x27;</span>, contents)</span><br><span class="line">    </span><br><span class="line">schedule.every().minute.at(<span class="string">&quot;:30&quot;</span>).do(run)</span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    schedule.run_pending()</span><br><span class="line">    time.sleep(<span class="number">5</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">ZBY</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/10/06/python%E8%87%AA%E5%8A%A8%E5%8C%96/">http://example.com/2023/10/06/python%E8%87%AA%E5%8A%A8%E5%8C%96/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/10/06/redis/" title="redis"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">redis</div></div></a></div><div class="next-post pull-right"><a href="/2023/10/06/python%E8%AF%AD%E6%B3%95/" title="python语法"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">python语法</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ZBY</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zbyuser" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="/3083402283@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GUI%E8%87%AA%E5%8A%A8%E5%8C%96%E5%A4%84%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">GUI自动化处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFGUI%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="toc-number">1.0.1.</span> <span class="toc-text">什么是GUI自动化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85"><span class="toc-number">1.0.2.</span> <span class="toc-text">环境安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8"><span class="toc-number">1.0.3.</span> <span class="toc-text">控制鼠标移动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E9%BC%A0%E6%A0%87%E4%BA%A4%E4%BA%92"><span class="toc-number">1.0.4.</span> <span class="toc-text">控制鼠标交互</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%82%B9%E5%87%BB%E9%BC%A0%E6%A0%87"><span class="toc-number">1.0.4.1.</span> <span class="toc-text">点击鼠标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8B%96%E5%8A%A8%E9%BC%A0%E6%A0%87"><span class="toc-number">1.0.4.2.</span> <span class="toc-text">拖动鼠标</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BB%9A%E5%8A%A8%E9%BC%A0%E6%A0%87"><span class="toc-number">1.0.4.3.</span> <span class="toc-text">滚动鼠标</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E5%B1%8F%E5%B9%95"><span class="toc-number">1.0.5.</span> <span class="toc-text">处理屏幕</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7"><span class="toc-number">1.0.5.1.</span> <span class="toc-text">获取屏幕快照</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7"><span class="toc-number">1.0.5.2.</span> <span class="toc-text">分析屏幕快照</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB"><span class="toc-number">1.0.6.</span> <span class="toc-text">图像识别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E9%94%AE%E7%9B%98"><span class="toc-number">1.0.7.</span> <span class="toc-text">控制键盘</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E9%94%AE%E7%9B%98%E5%8F%91%E9%80%81%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.0.7.1.</span> <span class="toc-text">通过键盘发送一个字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%94%AE%E5%90%8D"><span class="toc-number">1.0.7.2.</span> <span class="toc-text">键名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E4%B8%8B%E5%92%8C%E9%87%8A%E6%94%BE%E9%94%AE%E7%9B%98"><span class="toc-number">1.0.7.3.</span> <span class="toc-text">按下和释放键盘</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%83%AD%E9%94%AE%E7%BB%84%E5%90%88"><span class="toc-number">1.0.7.4.</span> <span class="toc-text">热键组合</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%EF%BC%9A%E5%BE%AE%E4%BF%A1%E8%87%AA%E5%8A%A8%E5%8C%96"><span class="toc-number">1.0.8.</span> <span class="toc-text">项目：微信自动化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%91%E8%A7%86%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.0.9.</span> <span class="toc-text">监视程序</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="小程序"/></a><div class="content"><a class="title" href="/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序">小程序</a><time datetime="2023-10-06T04:55:11.780Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="社交网络群体发现研究"/></a><div class="content"><a class="title" href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究">社交网络群体发现研究</a><time datetime="2023-10-06T04:55:11.777Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%AE%9E%E6%88%98/" title="笔试面试实战"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="笔试面试实战"/></a><div class="content"><a class="title" href="/2023/10/06/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%AE%9E%E6%88%98/" title="笔试面试实战">笔试面试实战</a><time datetime="2023-10-06T04:55:11.774Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/xv6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="xv6操作系统"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="xv6操作系统"/></a><div class="content"><a class="title" href="/2023/10/06/xv6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="xv6操作系统">xv6操作系统</a><time datetime="2023-10-06T04:55:11.771Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/redis/" title="redis"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="redis"/></a><div class="content"><a class="title" href="/2023/10/06/redis/" title="redis">redis</a><time datetime="2023-10-06T04:55:11.769Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By ZBY</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

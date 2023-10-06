@@ -1,0 +1,498 @@
+<!DOCTYPE html><html lang="zn-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>小程序 | ZBY成长记</title><meta name="author" content="ZBY,3083402283@qq.com"><meta name="copyright" content="ZBY"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="day01 微信小程序1. 问题 什么是微信小程序？   12345- 移动互联网时代，手机。 - 手机软件，在手机上中安装很多软件。- 腾讯和阿里（只安装自己不用别人）	- 腾讯：微信 + N小程序	- 阿里：支付宝 + N小程序  为什么要做小程序？   12微信用户基数大。在微信上用我们小程序会比较便捷。  如何开发小程序？    小程序：学习微信开发的语言（前端html、css、js、vu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小程序">
+<meta property="og:url" content="http://example.com/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.html">
+<meta property="og:site_name" content="ZBY成长记">
+<meta property="og:description" content="day01 微信小程序1. 问题 什么是微信小程序？   12345- 移动互联网时代，手机。 - 手机软件，在手机上中安装很多软件。- 腾讯和阿里（只安装自己不用别人）	- 腾讯：微信 + N小程序	- 阿里：支付宝 + N小程序  为什么要做小程序？   12微信用户基数大。在微信上用我们小程序会比较便捷。  如何开发小程序？    小程序：学习微信开发的语言（前端html、css、js、vu">
+<meta property="og:locale" content="zn_CN">
+<meta property="og:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg">
+<meta property="article:published_time" content="2023-10-06T04:55:11.780Z">
+<meta property="article:modified_time" content="2023-10-06T05:11:26.600Z">
+<meta property="article:author" content="ZBY">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '小程序',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-10-06 13:11:26'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="ZBY成长记"><span class="site-name">ZBY成长记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">小程序</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-10-06T04:55:11.780Z" title="Created 2023-10-06 12:55:11">2023-10-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-10-06T05:11:26.600Z" title="Updated 2023-10-06 13:11:26">2023-10-06</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="小程序"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="day01-微信小程序"><a href="#day01-微信小程序" class="headerlink" title="day01 微信小程序"></a>day01 微信小程序</h2><h3 id="1-问题"><a href="#1-问题" class="headerlink" title="1. 问题"></a>1. 问题</h3><ul>
+<li><p>什么是微信小程序？</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- 移动互联网时代，手机。 </span><br><span class="line">- 手机软件，在手机上中安装很多软件。</span><br><span class="line">- 腾讯和阿里（只安装自己不用别人）</span><br><span class="line">	- 腾讯：微信 + N小程序</span><br><span class="line">	- 阿里：支付宝 + N小程序</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>为什么要做小程序？</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">微信用户基数大。</span><br><span class="line">在微信上用我们小程序会比较便捷。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如何开发小程序？<br>  <img src="/./images/1578271791453.png" alt="1578271791453"></p>
+<ul>
+<li>小程序：学习微信开发的语言（前端html、css、js、vue.js）<ul>
+<li>微信开发者工具</li>
+</ul>
+</li>
+<li>API：restful接口（Python+django+drf框架）。<ul>
+<li>pycharm</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-环境的搭建"><a href="#2-环境的搭建" class="headerlink" title="2.环境的搭建"></a>2.环境的搭建</h3><h4 id="2-1-Python环境"><a href="#2-1-Python环境" class="headerlink" title="2.1 Python环境"></a>2.1 Python环境</h4><ul>
+<li>虚拟环境<ul>
+<li>django</li>
+<li>drf</li>
+</ul>
+</li>
+<li>pycharm</li>
+</ul>
+<h4 id="2-2-小程序环境"><a href="#2-2-小程序环境" class="headerlink" title="2.2 小程序环境"></a>2.2 小程序环境</h4><h5 id="2-2-1-申请一个微信公众平台"><a href="#2-2-1-申请一个微信公众平台" class="headerlink" title="2.2.1 申请一个微信公众平台"></a>2.2.1 申请一个微信公众平台</h5><p><img src="/./images/1578272136595.png" alt="1578272136595"></p>
+<h5 id="2-2-2-保存自己的appid"><a href="#2-2-2-保存自己的appid" class="headerlink" title="2.2.2 保存自己的appid"></a>2.2.2 保存自己的appid</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">appid = wx1a3fac0e7easdfffs</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-2-3-下载开发者工具"><a href="#2-2-3-下载开发者工具" class="headerlink" title="2.2.3 下载开发者工具"></a>2.2.3 下载开发者工具</h5><p><img src="/./images/1578272484876.png" alt="1578272484876"></p>
+<p><img src="/./images/1578272502880.png" alt="1578272502880"></p>
+<h5 id="2-2-4-创建项目"><a href="#2-2-4-创建项目" class="headerlink" title="2.2.4 创建项目"></a>2.2.4 创建项目</h5><p><img src="/./images/1578272664306.png" alt="1578272664306"></p>
+<p><img src="/./images/1578273193093.png" alt="1578273193093"></p>
+<p><img src="/./images/1578273816272.png" alt="1578273816272"></p>
+<h3 id="3-开发小程序"><a href="#3-开发小程序" class="headerlink" title="3.开发小程序"></a>3.开发小程序</h3><h4 id="3-1-全局配置"><a href="#3-1-全局配置" class="headerlink" title="3.1 全局配置"></a>3.1 全局配置</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;pages&quot;: [</span><br><span class="line">    &quot;pages/index/index&quot;,</span><br><span class="line">    &quot;pages/home/home&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;window&quot;: &#123;</span><br><span class="line">    &quot;navigationBarBackgroundColor&quot;: &quot;#FFDAB9&quot;,</span><br><span class="line">    &quot;navigationBarTextStyle&quot;: &quot;black&quot;,</span><br><span class="line">    &quot;navigationBarTitleText&quot;: &quot;李业&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;tabBar&quot;: &#123;</span><br><span class="line">    &quot;selectedColor&quot;:&quot;#CD5C5C&quot;,</span><br><span class="line">    &quot;list&quot;: [</span><br><span class="line">      &#123;</span><br><span class="line">        &quot;pagePath&quot;: &quot;pages/index/index&quot;,</span><br><span class="line">        &quot;text&quot;: &quot;首页&quot;,</span><br><span class="line">        &quot;iconPath&quot;: &quot;static/tabbar/ic_menu_choice_nor.png&quot;,</span><br><span class="line">        &quot;selectedIconPath&quot;: &quot;static/tabbar/ic_menu_choice_pressed.png&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        &quot;pagePath&quot;: &quot;pages/home/home&quot;,</span><br><span class="line">        &quot;text&quot;: &quot;我的&quot;,</span><br><span class="line">        &quot;iconPath&quot;: &quot;static/tabbar/ic_menu_me_nor.png&quot;,</span><br><span class="line">        &quot;selectedIconPath&quot;: &quot;static/tabbar/ic_menu_me_pressed.png&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/./images/1578276316658.png" alt="1578276316658"></p>
+<h4 id="3-2-组件"><a href="#3-2-组件" class="headerlink" title="3.2 组件"></a>3.2 组件</h4><h5 id="3-2-1-text"><a href="#3-2-1-text" class="headerlink" title="3.2.1 text"></a>3.2.1 text</h5><p>编写文本信息，类似于span标签</p>
+<h5 id="3-2-2-view"><a href="#3-2-2-view" class="headerlink" title="3.2.2 view"></a>3.2.2 view</h5><p>容器，类似于div标签</p>
+<h5 id="3-2-3-image"><a href="#3-2-3-image" class="headerlink" title="3.2.3 image"></a>3.2.3 image</h5><p>图片</p>
+<h4 id="3-3-样式"><a href="#3-3-样式" class="headerlink" title="3.3 样式"></a>3.3 样式</h4><h5 id="3-3-1-像素"><a href="#3-3-1-像素" class="headerlink" title="3.3.1 像素"></a>3.3.1 像素</h5><ul>
+<li>px</li>
+<li>rpx，750rpx（整个页面的宽度）</li>
+</ul>
+<p>图片大，div容器小：让图片width为100%，height为100%。这样图片就能占到div的100%</p>
+<h3 id="4-flex布局"><a href="#4-flex布局" class="headerlink" title="4.flex布局"></a>4.flex布局</h3><p>一种非常方便的布局方式。 </p>
+<p>在容器中记住4个样式即可。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">display</span>: flex;   				<span class="attribute">flex</span>布局</span><br><span class="line"><span class="attribute">flex-direction</span>: row;			规定主轴的方向：row/column</span><br><span class="line"><span class="attribute">justify-content</span>: space-around;	元素在主轴方向上的排列方式:flex-start/flex-end/space-around/space-between		</span><br><span class="line">align-items: center;			元素在副轴方向上的排列方式:flex-start/flex-end/space-around/space-between		</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="day02-微信小程序"><a href="#day02-微信小程序" class="headerlink" title="day02 微信小程序"></a>day02 微信小程序</h2><h3 id="内容回顾"><a href="#内容回顾" class="headerlink" title="内容回顾"></a>内容回顾</h3><ul>
+<li><p>搭建环境</p>
+</li>
+<li><p>全局配置</p>
+<ul>
+<li>pages</li>
+<li>window</li>
+<li>tabbar</li>
+</ul>
+</li>
+<li><p>页面</p>
+<ul>
+<li>json</li>
+<li>js</li>
+<li>wxml</li>
+<li>wxss</li>
+</ul>
+</li>
+<li><p>flex布局</p>
+<ul>
+<li>display: flex</li>
+<li>flex-direction: row&#x2F;column</li>
+<li>justify-content:…</li>
+<li>align-item:…</li>
+</ul>
+</li>
+<li><p>小程序开发</p>
+<ul>
+<li>组件（标签）<ul>
+<li>text</li>
+<li>view</li>
+<li>image</li>
+</ul>
+</li>
+<li>样式<ul>
+<li>rpx</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="今日概要"><a href="#今日概要" class="headerlink" title="今日概要"></a>今日概要</h3><ul>
+<li>指令</li>
+<li>api</li>
+<li>页面</li>
+</ul>
+<h3 id="今日内容"><a href="#今日内容" class="headerlink" title="今日内容"></a>今日内容</h3><h4 id="1-跳转"><a href="#1-跳转" class="headerlink" title="1. 跳转"></a>1. 跳转</h4><h5 id="1-1-对标签绑定点击事件"><a href="#1-1-对标签绑定点击事件" class="headerlink" title="1.1 对标签绑定点击事件"></a>1.1 对标签绑定点击事件</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;view bindtap=&quot;clickMe&quot; data-nid=&quot;123&quot; data-name=&quot;SD&quot; &gt;点我跳转&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Page(&#123;</span><br><span class="line">  ...</span><br><span class="line">  /**</span><br><span class="line">   *  点击绑定的事件</span><br><span class="line">  */</span><br><span class="line">  clickMe:function(e)&#123;</span><br><span class="line">    var nid = e.currentTarget.dataset.nid;</span><br><span class="line">    console.log(nid);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-2-页面跳转"><a href="#1-2-页面跳转" class="headerlink" title="1.2 页面跳转"></a>1.2 页面跳转</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">只能跳转到非tabbar页面</span><br><span class="line">wx.navigateTo(&#123;</span><br><span class="line">	url: &#x27;/pages/redirect/redirect?id=&#x27;+nid</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>跳转到的页面如果想要接受参数，可以在onLoad方法中接受。</p>
+<p>redirect.js</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Page(&#123;</span><br><span class="line">/**</span><br><span class="line">   * 生命周期函数--监听页面加载</span><br><span class="line">   */</span><br><span class="line">  onLoad: function (options) &#123;</span><br><span class="line">    console.log(options);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="1-3-通过标签跳转"><a href="#1-3-通过标签跳转" class="headerlink" title="1.3 通过标签跳转"></a>1.3 通过标签跳转</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;navigator url=&quot;/pages/redirect/redirect?id=666&quot;&gt;跳转到新页面&lt;/navigator&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="2-数据绑定"><a href="#2-数据绑定" class="headerlink" title="2.数据绑定"></a>2.数据绑定</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	...</span><br><span class="line">	</span><br><span class="line">	&lt;div id=&quot;content&quot;&gt;&lt;/div&gt;</span><br><span class="line">	</span><br><span class="line">	&lt;script&gt;</span><br><span class="line">		var name = &quot;李业迟到&quot;;</span><br><span class="line">		$(&#x27;#content&#x27;).val(name);</span><br><span class="line">	&lt;/script&gt;</span><br><span class="line">	</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>vue.js </p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">        &lt;div&gt;&#123;&#123;message&#125;&#125;&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;script&gt;</span><br><span class="line">        new Vue(&#123;</span><br><span class="line">          el: &#x27;#app&#x27;,</span><br><span class="line">          data: &#123;</span><br><span class="line">            message: &#x27;老男孩教育Python&#x27;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">	</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="2-1-基本显示"><a href="#2-1-基本显示" class="headerlink" title="2.1 基本显示"></a>2.1 基本显示</h5><ul>
+<li><p>wxml</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;view&gt;数据1：&#123;&#123;message&#125;&#125;&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>展示数据</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">// pages/bind/bind.js</span><br><span class="line">Page(&#123;</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 页面的初始数据</span><br><span class="line">   */</span><br><span class="line">  data: &#123;</span><br><span class="line">    message:&quot;沙雕李业&quot;,</span><br><span class="line">  &#125;</span><br><span class="line">)&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="2-2-数据更新"><a href="#2-2-数据更新" class="headerlink" title="2.2 数据更新"></a>2.2 数据更新</h5><ul>
+<li><p>wxml</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;view&gt;数据2：&#123;&#123;message&#125;&#125;&lt;/view&gt;</span><br><span class="line"></span><br><span class="line">&lt;button bindtap=&quot;changeData&quot;&gt;点击修改数据&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改数据</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Page(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    message:&quot;沙雕李业&quot;,</span><br><span class="line">  &#125;,</span><br><span class="line">  changeData:function()&#123;</span><br><span class="line">    // 修改数据</span><br><span class="line">    // 错误方式: this.data.message = &quot;大沙雕李业&quot;;</span><br><span class="line">    this.setData(&#123; message: &quot;大沙雕李业&quot;&#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="3-获取用户信息"><a href="#3-获取用户信息" class="headerlink" title="3.获取用户信息"></a>3.获取用户信息</h4><h5 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h5><ul>
+<li><p>wxml</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;view bindtap=&quot;getUserName&quot;&gt;获取当前用户名&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>js</p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">getUserName</span>:<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">	<span class="comment">// 调用微信提供的接口获取用户信息</span></span><br><span class="line">  wx.<span class="title function_">getUserInfo</span>(&#123;</span><br><span class="line">    <span class="attr">success</span>: <span class="keyword">function</span> (<span class="params">res</span>) &#123;</span><br><span class="line">      <span class="comment">// 调用成功后触发</span></span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;success&#x27;</span>,res)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">fail</span>:<span class="keyword">function</span>(<span class="params">res</span>)&#123;</span><br><span class="line">      <span class="comment">// 调用失败后触发</span></span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;fail&#x27;</span>, res)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h5><ul>
+<li><p>wxml</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button open-type=&quot;getUserInfo&quot; bindgetuserinfo=&quot;xxxx&quot;&gt;授权登录&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>js</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">xxxx:function()&#123;</span><br><span class="line">   wx.getUserInfo(&#123;</span><br><span class="line">     success: function (res) &#123;</span><br><span class="line">       // 调用成功后触发</span><br><span class="line">       console.log(&#x27;success&#x27;, res)</span><br><span class="line">     &#125;,</span><br><span class="line">     fail: function (res) &#123;</span><br><span class="line">       // 调用失败后触发</span><br><span class="line">       console.log(&#x27;fail&#x27;, res)</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;)</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><ul>
+<li><p>wxml</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--pages/login/login.wxml--&gt;</span><br><span class="line">&lt;view&gt;当前用户名：&#123;&#123;name&#125;&#125;&lt;/view&gt;</span><br><span class="line">&lt;view&gt;</span><br><span class="line">当前头像：&lt;image src=&quot;&#123;&#123;path&#125;&#125;&quot; style=&quot;height:200rpx;width:200rpx;&quot;&gt;&lt;/image&gt;</span><br><span class="line">  &lt;/view&gt;</span><br><span class="line">&lt;button open-type=&quot;getUserInfo&quot; bindgetuserinfo=&quot;fetchInfo&quot;&gt;获取信息button&lt;/button&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>js</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">// pages/login/login.js</span><br><span class="line">Page(&#123;</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 页面的初始数据</span><br><span class="line">   */</span><br><span class="line">  data: &#123;</span><br><span class="line">      name:&quot;&quot;,</span><br><span class="line">      path: &quot;/static/default.png&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  fetchInfo:function()&#123;</span><br><span class="line">    var that = this;</span><br><span class="line">    wx.getUserInfo(&#123;</span><br><span class="line">      success:function(res)&#123;</span><br><span class="line">        console.log(res);</span><br><span class="line">        that.setData(&#123;</span><br><span class="line">          name:res.userInfo.nickName,</span><br><span class="line">          path:res.userInfo.avatarUrl</span><br><span class="line">        &#125;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  /**</span><br><span class="line">   * 生命周期函数--监听页面加载</span><br><span class="line">   */</span><br><span class="line">  onLoad: function (options) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 生命周期函数--监听页面初次渲染完成</span><br><span class="line">   */</span><br><span class="line">  onReady: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 生命周期函数--监听页面显示</span><br><span class="line">   */</span><br><span class="line">  onShow: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 生命周期函数--监听页面隐藏</span><br><span class="line">   */</span><br><span class="line">  onHide: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 生命周期函数--监听页面卸载</span><br><span class="line">   */</span><br><span class="line">  onUnload: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 页面相关事件处理函数--监听用户下拉动作</span><br><span class="line">   */</span><br><span class="line">  onPullDownRefresh: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 页面上拉触底事件的处理函数</span><br><span class="line">   */</span><br><span class="line">  onReachBottom: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 用户点击右上角分享</span><br><span class="line">   */</span><br><span class="line">  onShareAppMessage: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>  注意事项：</p>
+<ul>
+<li><p>想要获取用户信息，必须经过用户授权（button）。 </p>
+</li>
+<li><p>已授权</p>
+</li>
+<li><p>不授权，通过调用<code>wx.openSetting</code></p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// 打开配置，手动授权。</span><br><span class="line">// wx.openSetting(&#123;&#125;)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h4 id="4-获取用户位置信息"><a href="#4-获取用户位置信息" class="headerlink" title="4.获取用户位置信息"></a>4.获取用户位置信息</h4><ul>
+<li><p>wxml</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;view bindtap=&quot;getLocalPath&quot;&gt;&#123;&#123;localPath&#125;&#125;&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>js</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    localPath:&quot;请选择位置&quot;,</span><br><span class="line">&#125;,</span><br><span class="line">getLocalPath:function()&#123;</span><br><span class="line">  var that = this;</span><br><span class="line">  wx.chooseLocation(&#123;</span><br><span class="line">    success: function(res) &#123;</span><br><span class="line">      that.setData(&#123;localPath:res.address&#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="5-for指令"><a href="#5-for指令" class="headerlink" title="5. for指令"></a>5. for指令</h4><ul>
+<li><p>wxml</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--pages/goods/goods.wxml--&gt;</span><br><span class="line">&lt;text&gt;商品列表&lt;/text&gt;</span><br><span class="line">&lt;view&gt;</span><br><span class="line">  &lt;view wx:for=&quot;&#123;&#123;dataList&#125;&#125;&quot; &gt;&#123;&#123;index&#125;&#125; -  &#123;&#123;item&#125;&#125;&lt;/view&gt;</span><br><span class="line">  &lt;view wx:for=&quot;&#123;&#123;dataList&#125;&#125;&quot; wx:for-index=&quot;idx&quot; wx:for-item=&quot;x&quot;&gt;&#123;&#123;idx&#125;&#125; -  &#123;&#123;x&#125;&#125;&lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line">&lt;view&gt;</span><br><span class="line">  &#123;&#123;userInfo.name&#125;&#125;</span><br><span class="line">  &#123;&#123;userInfo.age&#125;&#125;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line">&lt;view&gt;</span><br><span class="line">  &lt;view wx:for=&quot;&#123;&#123;userInfo&#125;&#125;&quot;&gt;&#123;&#123;index&#125;&#125; - &#123;&#123;item&#125;&#125;&lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>js</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  dataList:[&quot;白浩为&quot;,&quot;海狗&quot;,&quot;常鑫&quot;],</span><br><span class="line">  userInfo:&#123;</span><br><span class="line">    name:&quot;alex&quot;,</span><br><span class="line">    age:18</span><br><span class="line">  &#125;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="6-获取图片"><a href="#6-获取图片" class="headerlink" title="6.获取图片"></a>6.获取图片</h4><ul>
+<li><p>wxml</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--pages/publish/publish.wxml--&gt;</span><br><span class="line">&lt;view bindtap=&quot;uploadImage&quot;&gt;请上传图片&lt;/view&gt;</span><br><span class="line">&lt;view class=&quot;container&quot;&gt;</span><br><span class="line">  &lt;image wx:for=&quot;&#123;&#123;imageList&#125;&#125;&quot; src=&quot;&#123;&#123;item&#125;&#125;&quot;&gt;&lt;/image&gt;</span><br><span class="line">&lt;/view&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>js</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  imageList: [&quot;/static/hg.jpg&quot;, &quot;/static/hg.jpg&quot;]</span><br><span class="line">&#125;,</span><br><span class="line">    </span><br><span class="line">uploadImage:function()&#123;</span><br><span class="line">  var that = this;</span><br><span class="line">    </span><br><span class="line">  wx.chooseImage(&#123;</span><br><span class="line">    count:9,</span><br><span class="line">    sizeType: [&#x27;original&#x27;, &#x27;compressed&#x27;],</span><br><span class="line">    sourceType: [&#x27;album&#x27;, &#x27;camera&#x27;],</span><br><span class="line">    success:function(res)&#123;</span><br><span class="line">      // 设置imageList，页面上图片自动修改。</span><br><span class="line">      // that.setData(&#123;</span><br><span class="line">      //   imageList: res.tempFilePaths</span><br><span class="line">      // &#125;);</span><br><span class="line">    </span><br><span class="line">      // 默认图片 + 选择的图片； </span><br><span class="line">      that.setData(&#123;</span><br><span class="line">        imageList: that.data.imageList.concat(res.tempFilePaths)</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>注意：图片目前只是上传到了内存。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li><p>标签（组件）</p>
+<ul>
+<li>text</li>
+<li>view</li>
+<li>image</li>
+<li>navigator，跳转到其他页面（默认只能跳转到非tabbar页面）</li>
+<li>button，按钮（特殊：建议获取用户信息时）</li>
+</ul>
+</li>
+<li><p>事件</p>
+<ul>
+<li><p>bindtap</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;view bindtap=&quot;func&quot;&gt;&lt;/view&gt;</span><br><span class="line"></span><br><span class="line">&lt;view bindtap=&quot;func&quot; data-xx=&quot;123&quot;&gt;&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">func:function(e)&#123;</span><br><span class="line">	e.currentTarget.dataset</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>api</p>
+<ul>
+<li><p>navigateTo</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wx.navigateTo(&#123;</span><br><span class="line">	url: &#x27;/pages/redirect/redirect?id=&#x27;+nid,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>openSetting</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wx.openSetting(&#123;&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>getUserInfo</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> wx.getUserInfo(&#123;</span><br><span class="line">      success:function(res)&#123;</span><br><span class="line">        console.log(res);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">注意：结合button按钮实现</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>chooseLocation</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">wx.chooseLocation(&#123;</span><br><span class="line">      success: function(res) &#123;</span><br><span class="line">        </span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>chooseImage</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">wx.chooseImage(&#123;</span><br><span class="line">      count:9,</span><br><span class="line">      sizeType: [&#x27;original&#x27;, &#x27;compressed&#x27;],</span><br><span class="line">      sourceType: [&#x27;album&#x27;, &#x27;camera&#x27;],</span><br><span class="line">      success:function(res)&#123;</span><br><span class="line">        </span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>数据绑定</p>
+</li>
+<li><p>for指令<br>  注意：setData + that</p>
+</li>
+</ul>
+<h3 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h3><ol>
+<li><p>拍卖详细页面<br> <img src="/./images/1578372522526.png" alt="1578372522526"></p>
+</li>
+<li><p>发布消息的页面</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;textarea&gt;&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
+
+<p> <img src="/./images/1578372545461.png" alt="1578372545461"></p>
+</li>
+<li><p>功能点：</p>
+<ul>
+<li>拍卖列表页面通过for循环+后端数据展示信息。</li>
+<li>点击拍卖列表中的某项拍卖时，需要将自己的ID传递给 拍卖详细页面。 </li>
+<li>上传图片</li>
+<li>选择位置</li>
+</ul>
+</li>
+</ol>
+<h2 id="day04-功能开发"><a href="#day04-功能开发" class="headerlink" title="day04 功能开发"></a>day04 功能开发</h2><h3 id="内容回顾-1"><a href="#内容回顾-1" class="headerlink" title="内容回顾"></a>内容回顾</h3><ul>
+<li>组件<ul>
+<li>view</li>
+<li>text</li>
+<li>image</li>
+<li>button</li>
+<li>navigtor</li>
+<li>textarea</li>
+<li>input</li>
+</ul>
+</li>
+<li>api<ul>
+<li>用户信息</li>
+<li>地理位置</li>
+<li>选择图片</li>
+<li>跳转（非tabbar）</li>
+<li>打开授权配置</li>
+<li>发送请求（https&#x2F;后台设置）</li>
+<li>提示框</li>
+</ul>
+</li>
+<li>数据绑定<ul>
+<li>setData</li>
+</ul>
+</li>
+<li>腾讯云发送短信服务<ul>
+<li>后台配置频率</li>
+<li>调用API进行发送：v3版本</li>
+</ul>
+</li>
+</ul>
+<h3 id="今日概要-1"><a href="#今日概要-1" class="headerlink" title="今日概要"></a>今日概要</h3><ul>
+<li>用户登录&#x2F;注册</li>
+<li>发布心情<ul>
+<li>图片上传（腾讯对象存储）</li>
+</ul>
+</li>
+<li>查看心情</li>
+<li>查看心情详细</li>
+</ul>
+<h3 id="今日详细"><a href="#今日详细" class="headerlink" title="今日详细"></a>今日详细</h3><h4 id="1-用户登录"><a href="#1-用户登录" class="headerlink" title="1. 用户登录"></a>1. 用户登录</h4><h4 id="1-1-发送短信"><a href="#1-1-发送短信" class="headerlink" title="1.1 发送短信"></a>1.1 发送短信</h4><h4 id="1-2-登录"><a href="#1-2-登录" class="headerlink" title="1.2 登录"></a>1.2 登录</h4><ul>
+<li><p>小程序公共对象</p>
+<ul>
+<li><p>app.js</p>
+  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">App</span>(&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="attr">onLaunch</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">globalData</span>:&#123;</span><br><span class="line">    <span class="attr">userInfo</span>: <span class="literal">null</span>, </span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>其他页面操作公共值</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var app = getApp();</span><br><span class="line">Page(&#123;</span><br><span class="line">	data: &#123;</span><br><span class="line">  	&#125;,</span><br><span class="line">  	onShow:function()&#123;</span><br><span class="line">  		app.globalData</span><br><span class="line">  	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>  注意：修改globalData之后，其他页面引用的值不会自动变化，而是需要手动设置。</p>
+</li>
+</ul>
+</li>
+<li><p>本地存储操作</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wx.getStorageSync(&#x27;userInfo&#x27;);</span><br><span class="line">wx.setStorageSync(&#x27;userInfo&#x27;,&quot;sdfsfd&quot;);  // key:value</span><br><span class="line">wx.removeStorageSync(&quot;userInfo&quot;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>页面调用栈</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var pages = getCurrentPages();</span><br><span class="line">prevPage = pages[pages.length-2];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>跳转回上一个页面</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wx.navigateBack(&#123;&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>小程序页面的生命周期</p>
+<ul>
+<li>onLoad（一次）</li>
+<li>onShow（只要展示这个页面，就会自动加载）</li>
+<li>onReady（一次）</li>
+<li>onHide（每次页面隐藏就会自动加载，从A页面跳到B页面的时候A页面的onHidejiu’hui）</li>
+<li>onUnload（卸载页面，小程序关闭）</li>
+</ul>
+</li>
+<li><p>全局app.js</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">App(&#123;</span><br><span class="line"></span><br><span class="line">  /**</span><br><span class="line">   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）</span><br><span class="line">   */</span><br><span class="line">  onLaunch: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line">  globalData:&#123;</span><br><span class="line">    userInfo: null, </span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>wx:if指令</p>
+</li>
+</ul>
+<h3 id="作业-1"><a href="#作业-1" class="headerlink" title="作业"></a>作业</h3><ul>
+<li><p>登录逻辑</p>
+</li>
+<li><p>对象存储上传文件：官方文档有代码。</p>
+</li>
+<li><p>表结构的设计（业务逻辑设计表结构）</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">ZBY</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/">http://example.com/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">社交网络群体发现研究</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ZBY</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zbyuser" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="/3083402283@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#day01-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.</span> <span class="toc-text">day01 微信小程序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">1. 问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA"><span class="toc-number">1.2.</span> <span class="toc-text">2.环境的搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-Python%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 Python环境</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 小程序环境</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-1-%E7%94%B3%E8%AF%B7%E4%B8%80%E4%B8%AA%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%B9%B3%E5%8F%B0"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">2.2.1 申请一个微信公众平台</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-2-%E4%BF%9D%E5%AD%98%E8%87%AA%E5%B7%B1%E7%9A%84appid"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">2.2.2 保存自己的appid</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-3-%E4%B8%8B%E8%BD%BD%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">2.2.3 下载开发者工具</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-4-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="toc-number">1.2.2.4.</span> <span class="toc-text">2.2.4 创建项目</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%BC%80%E5%8F%91%E5%B0%8F%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.3.</span> <span class="toc-text">3.开发小程序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 全局配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E7%BB%84%E4%BB%B6"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-1-text"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">3.2.1 text</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-2-view"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">3.2.2 view</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-2-3-image"><span class="toc-number">1.3.2.3.</span> <span class="toc-text">3.2.3 image</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.3 样式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-3-1-%E5%83%8F%E7%B4%A0"><span class="toc-number">1.3.3.1.</span> <span class="toc-text">3.3.1 像素</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-flex%E5%B8%83%E5%B1%80"><span class="toc-number">1.4.</span> <span class="toc-text">4.flex布局</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#day02-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F"><span class="toc-number">2.</span> <span class="toc-text">day02 微信小程序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%9B%9E%E9%A1%BE"><span class="toc-number">2.1.</span> <span class="toc-text">内容回顾</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8A%E6%97%A5%E6%A6%82%E8%A6%81"><span class="toc-number">2.2.</span> <span class="toc-text">今日概要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8A%E6%97%A5%E5%86%85%E5%AE%B9"><span class="toc-number">2.3.</span> <span class="toc-text">今日内容</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E8%B7%B3%E8%BD%AC"><span class="toc-number">2.3.1.</span> <span class="toc-text">1. 跳转</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-1-%E5%AF%B9%E6%A0%87%E7%AD%BE%E7%BB%91%E5%AE%9A%E7%82%B9%E5%87%BB%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.3.1.1.</span> <span class="toc-text">1.1 对标签绑定点击事件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-2-%E9%A1%B5%E9%9D%A2%E8%B7%B3%E8%BD%AC"><span class="toc-number">2.3.1.2.</span> <span class="toc-text">1.2 页面跳转</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-3-%E9%80%9A%E8%BF%87%E6%A0%87%E7%AD%BE%E8%B7%B3%E8%BD%AC"><span class="toc-number">2.3.1.3.</span> <span class="toc-text">1.3 通过标签跳转</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A"><span class="toc-number">2.3.2.</span> <span class="toc-text">2.数据绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-%E5%9F%BA%E6%9C%AC%E6%98%BE%E7%A4%BA"><span class="toc-number">2.3.2.1.</span> <span class="toc-text">2.1 基本显示</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-2-%E6%95%B0%E6%8D%AE%E6%9B%B4%E6%96%B0"><span class="toc-number">2.3.2.2.</span> <span class="toc-text">2.2 数据更新</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF"><span class="toc-number">2.3.3.</span> <span class="toc-text">3.获取用户信息</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%80"><span class="toc-number">2.3.3.1.</span> <span class="toc-text">方式一</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%BA%8C"><span class="toc-number">2.3.3.2.</span> <span class="toc-text">方式二</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-number">2.3.3.3.</span> <span class="toc-text">示例</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="toc-number">2.3.4.</span> <span class="toc-text">4.获取用户位置信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-for%E6%8C%87%E4%BB%A4"><span class="toc-number">2.3.5.</span> <span class="toc-text">5. for指令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87"><span class="toc-number">2.3.6.</span> <span class="toc-text">6.获取图片</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">2.4.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%9C%E4%B8%9A"><span class="toc-number">2.5.</span> <span class="toc-text">作业</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#day04-%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91"><span class="toc-number">3.</span> <span class="toc-text">day04 功能开发</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E5%AE%B9%E5%9B%9E%E9%A1%BE-1"><span class="toc-number">3.1.</span> <span class="toc-text">内容回顾</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8A%E6%97%A5%E6%A6%82%E8%A6%81-1"><span class="toc-number">3.2.</span> <span class="toc-text">今日概要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8A%E6%97%A5%E8%AF%A6%E7%BB%86"><span class="toc-number">3.3.</span> <span class="toc-text">今日详细</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95"><span class="toc-number">3.3.1.</span> <span class="toc-text">1. 用户登录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-%E5%8F%91%E9%80%81%E7%9F%AD%E4%BF%A1"><span class="toc-number">3.3.2.</span> <span class="toc-text">1.1 发送短信</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-%E7%99%BB%E5%BD%95"><span class="toc-number">3.3.3.</span> <span class="toc-text">1.2 登录</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%9C%E4%B8%9A-1"><span class="toc-number">3.4.</span> <span class="toc-text">作业</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="小程序"/></a><div class="content"><a class="title" href="/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序">小程序</a><time datetime="2023-10-06T04:55:11.780Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="社交网络群体发现研究"/></a><div class="content"><a class="title" href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究">社交网络群体发现研究</a><time datetime="2023-10-06T04:55:11.777Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%AE%9E%E6%88%98/" title="笔试面试实战"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="笔试面试实战"/></a><div class="content"><a class="title" href="/2023/10/06/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%AE%9E%E6%88%98/" title="笔试面试实战">笔试面试实战</a><time datetime="2023-10-06T04:55:11.774Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/xv6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="xv6操作系统"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="xv6操作系统"/></a><div class="content"><a class="title" href="/2023/10/06/xv6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="xv6操作系统">xv6操作系统</a><time datetime="2023-10-06T04:55:11.771Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/redis/" title="redis"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="redis"/></a><div class="content"><a class="title" href="/2023/10/06/redis/" title="redis">redis</a><time datetime="2023-10-06T04:55:11.769Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By ZBY</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

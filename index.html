@@ -1,209 +1,295 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zn-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ZBY成长记</title><meta name="author" content="ZBY,3083402283@qq.com"><meta name="copyright" content="ZBY"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="ZBY成长记">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="ZBY成长记">
+<meta property="og:locale" content="zn_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="ZBY">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ZBY成长记',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-10-06 13:12:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/10/06/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-10-06T01:42:19.438Z" itemprop="datePublished">2023-10-06</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/10/06/hello-world/">Hello World</a>
-    </h1>
-  
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://w.wallhaven.cc/full/5g/wallhaven-5g3kl9.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="ZBY成长记"><span class="site-name">ZBY成长记</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 类别</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">ZBY成长记</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/zbyuser" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="/3083402283@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="小程序"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序">小程序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.780Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">day01 微信小程序1. 问题
+什么是微信小程序？
+  12345- 移动互联网时代，手机。 - 手机软件，在手机上中安装很多软件。- 腾讯和阿里（只安装自己不用别人）	- 腾讯：微信 + N小程序	- 阿里：支付宝 + N小程序
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+为什么要做小程序？
+  12微信用户基数大。在微信上用我们小程序会比较便捷。
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+如何开发小程序？  
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/10/06/hello-world/" data-id="clndy10hh000090ugcsmk6by7" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+小程序：学习微信开发的语言（前端html、css、js、vue.js）
+微信开发者工具
 
 
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/10/06/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
+API：restful接口（Python+django+drf框架）。
+pycharm
 
 
 
 
 
-  </div>
-</body>
-</html>
+2.环境的搭建2.1 Python环境
+虚拟环境
+django
+drf
+
+
+pycharm
+
+2.2 小程序环境2.2.1 申请一个微信公众平台
+2.2.2 保存自己的appid1appid = wx1a3fac0e7easdfffs
+
+2.2.3 下载开发者工具
+
+2.2.4 创建项目
+
+
+3.开发小程序3.1 全局配置12345678910111213141516171819202122232425262728&#123;  &quot;pages&quot;: ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="社交网络群体发现研究"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究">社交网络群体发现研究</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.777Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">Pytorch自动求梯度requires_grad属性可以通过设置参数的 requires_grad 属性来告诉 PyTorch 跟踪参数的梯度，并且可以使用自动求导机制来计算梯度。这允许我们在构建神经网络等机器学习模型时方便地计算梯度并进行梯度下降等优化操作。
+注意：在 PyTorch 中，自动求导机制要求损失函数输出必须是标量，以便能够正确计算梯度。
+举例说明：
+12345678910111213141516import torch# 创建一个需要求梯度的张量x = torch.tensor([2.0, 3.0], requires_grad=True)# 定义一个函数 y = 3x^2 + 2x + 1y = 3 * x**2 + 2 * x + 1# 将 y 转换为标量，例如通过对 y 进行求和y_scalar = y.sum()# 计算 y_scalar 对 x 的梯度y_scalar.backward()# 打印 x 的梯度print(x.grad)  # tensor([14., 20.])
+
+
+
+我们不允许张量对张量求导，只允许标量对张量求导，求导结果是和自变量同形的张 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/10/06/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%AE%9E%E6%88%98/" title="笔试面试实战"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="笔试面试实战"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%AE%9E%E6%88%98/" title="笔试面试实战">笔试面试实战</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.774Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">2023.8.28 中望软件T1：给定一个有序数组，所有数字均出现2次或1次，请你找出出现1次的数字
+12345输入：    [1,1,2]输出：    2数据范围：1&lt;=n&lt;=10^5
+
+12345678910class Solution &#123;public:	int solve(vector&lt;int&gt;&amp; nums)&#123;        for(int i = 0;i &lt; nums.size() - 1;i++)&#123;            if(nums[i] != nums[i+1]) return nums[i];            else i++;        &#125;        return nums[nums.size() - 1];    &#125;&#125;;
+
+
+
+T2：给定一个无序数组，请你找出数组中连续的自然数的个数（数的位置可以随意交换）
+12345输入：    [3,1,2,3,100,101,110]输出：    3数据范围：1&lt;=n&lt;=10^5
+
+1234567891 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/06/xv6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="xv6操作系统"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="xv6操作系统"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/xv6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="xv6操作系统">xv6操作系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.771Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">xv6实验记录安装vmware + ubuntu + qemu + xv6vmare + ubuntu
+vmware之前已经安装过了，因此直接使用就可以。
+然后去找一个ubuntu的镜像，找到国内的镜像，我找的是清华的镜像。下载完镜像之后，直接在操作系统上面安装ubuntu操作系统。
+出现的问题：
+
+由于当时电脑在安装ubuntu操作系统的时候，到最后卡死了，因此可能后面有一些配置啥的没装好，后来启动open-ssh服务端的时候出现了一些问题，从记：linux的ssh开启失败（Active: inactive (dead)） - Ying501 - 博客园 (cnblogs.com)找到了解决方案
+可能是上述的问题导致的，后来发现xshell不能连接root用户，只能连接zby普通用户，从以下的博客找到解决方案，应该是sshd_config文件出现的配置问题。[xshell 使用root 连接ubuntu server - lick - 博客园 (cnblogs.com)](https://www.cnblogs.com/lick468/p/10744502.html#:~:text= ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/10/06/redis/" title="redis"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="redis"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/redis/" title="redis">redis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.769Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">一、引言在Web应用发展的初期，那时关系型数据库受到了较为广泛的关注和应用，原因是因为那时候Web站点基本上访问和并发不高、交互也较少。而在后来，随着访问量的提升，使用关系型数据库的Web站点多多少少都开始在性能上出现了一些瓶颈，而瓶颈的源头一般是在磁盘的I&#x2F;O上。而随着互联网技术的进一步发展，各种类型的应用层出不穷，这导致在当今云计算、大数据盛行的时代，对性能有了更多的需求，主要体现在以下几个方面：
+
+
+低延迟的读写速度：应用快速地反应能极大地提升用户的满意度
+支撑海量的数据和流量：对于搜索这样大型应用而言，需要利用PB级别的数据和能应对百万级的流量
+大规模集群的管理：系统管理员希望分布式应用能更简单的部署和管理
+
+
+为了克服这一问题，NoSQL应运而生，它同时具备了高性能、可扩展性强、高可用等优点，受到广泛开发人员和仓库管理人员的青睐。
+关系型数据库（RMDBS）与非关系型数据库（NoSQL）的对比：
+数据库中表与表的数据之间存在某种关联的内在关系，因为这种关系，所以我们称这种数据库为关系型数据库。典型：Mysql&#x2F;MariaDB、postgreSQL、Orac ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/06/python%E8%87%AA%E5%8A%A8%E5%8C%96/" title="python自动化"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python自动化"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/python%E8%87%AA%E5%8A%A8%E5%8C%96/" title="python自动化">python自动化</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.763Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">GUI自动化处理
+GUI自动化就是写程序直接控制键盘和鼠标。这些程序可以控制其他应用，向它们发送虚拟的击键和鼠标点击，就像你自己坐在计算机前与应用交互一样。这种技术被称为“图形用户界面自动化”，或简称为“GUI 自动化”。有了 GUI 自动化，你的程序就像一个活人用户坐在计算机前一样，能做任何事情，除了将咖啡泼在键盘上。
+
+什么是GUI自动化
+也可以将 GUI 自动化看成是对一个机械臂编程。你可以对机械臂编程，让它敲键盘或移动鼠标。对于涉及许多无脑点击或填表的任务，这种技术特别有用。
+
+环境安装
+安装 pyautogui 模块
+
+pyautogui 模块可以向 Windows、OS X 和 Linux 发送虚拟按键和鼠标点击。根据你使用的操作系统，在安装 pyautogui 之前，可能需要安装一些其他模块（称为依赖关系）
+
+在 Windows 上，不需要安装其他模块。
+在 OS X 上，运行 sudo pip3 install pyobjc-framework-Quartz，sudo pip3 install pyobjc-core，然后 sudo pip3 install pyobj ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/10/06/python%E8%AF%AD%E6%B3%95/" title="python语法"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python语法"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/python%E8%AF%AD%E6%B3%95/" title="python语法">python语法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.760Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">1.深拷贝与浅拷贝注意：深拷贝指的是复制内容，单独开辟一个内存，浅拷贝指的是两个变量同时指向一个内存ID。
+python中的数据类型
+
+数值类型、字符串、元组、列表、字典、集合
+
+可变数据类型和不可变数据类型
+
+可变数据类型：list（列表）、dict（字典）、set（集合）
+不可变数据类型：数值类型（int、float、bool）、string（字符串）、tuple（元组）
+
+1234x = 3print(id(x))  # 140706618349392x += 6print(id(x))  # 140706618349584
+
+关于可变数据类型和不可变数据类型的解释：
+可变数据类型：该数据类型对应的变量的值发生了变化时，如果它对应的内存地址不发生改变
+不可变数据类型：该数据类型对应的变量的值发生了变化时，如果它对应的内存地址发生了改变  相当于是说：（该对象所指向的内存中的值不能被改变。当改变某个变量时候，由于其所指的值不能被改变，相当于把原来的值复制一份后再改变，这会开辟一个新的地址，变量再指向这个新的地址。）
+总结：可变数据类型更改值后，内存地址不发生改变。不可变数据类型更改 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/06/python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5/" title="python数据挖掘入门与实践"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python数据挖掘入门与实践"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E8%B7%B5/" title="python数据挖掘入门与实践">python数据挖掘入门与实践</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.757Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">第一章数据挖掘简介数据挖掘旨在让计算机根据已有数据做出决策。决策可以是预测明天的天气、拦截垃圾邮件、检测网站的语言，或者在约会网站上发现新的恋爱对象。数据挖掘方面的应用已经有很多，新的应用也在源源不断地出现
+抽取特征是数据挖掘过程的一个重要环节。需掌握从数据集中抽取区分度高的特征的方法。
+商品亲和性分析一条规则由前提条件和结论两部分组成。
+我们要找出“如果顾客购买了商品X，那么他们可能愿意购买商品Y”这样的规则
+简单粗暴的做法是，找出数据集中所有同时购买的两件商品。找出规则后，还需要判断其优劣，我们挑好的规则用。
+规则的优劣有多种衡量方法，常用的是支持度（support）和置信度（confidence）
+支持度指数据集中规则应验的次数，统计起来很简单。有时候，还需要对支持度进行规范化，即再除以规则有效前提下的总数量
+支持度衡量的是给定规则应验的比例，而置信度衡量的则是规则准确率如何，即符合给定条件（即规则的“如果”语句所表示的前提条件）的所有规则里，跟当前规则结论一致的比例有多大。计算方法为首先统计当前规则的出现次数，再用它来除以条件（“如果”语句）相同的规则数量。
+支持度 &#x3D ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/10/06/python%E7%88%AC%E8%99%AB/" title="Python爬虫"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python爬虫"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/python%E7%88%AC%E8%99%AB/" title="Python爬虫">Python爬虫</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.754Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">python正则表达式一、正则基础1、为什么使用正则
+需求
+  判断一个字符串是否是手机号
+
+解决
+  编写一个函数，给函数一个字符串，如果是手机号则返回True，否则返回False
+
+代码
+  12345678910def isPhone(phone):    # 长度为11    # 全部都是数字字符    # 以1开头    passif isPhone(&quot;13812345678&quot;):    print(&quot;是手机号&quot;)else:    print(&quot;不是手机号&quot;)
+
+注意
+  如果使用正则会让这个问题变得简单
+
+
+2、正则与re模块简介概述： 正则表达式，又称规则表达式
+正则表达式(regular expression)描述了一种字符串匹配的模式（pattern）
+正则匹配是一个 模糊的匹配(不是精确匹配)
+re：python自1.5版本开始增加了re模块，该模块提供了perl风格的正则表达式模式，re模块是python语言拥有了所有正则表达式的功能
+
+如下四个方法经常使用
+match()
+search()
+findal ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/06/oracle/" title="oracle"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="oracle"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/06/oracle/" title="oracle">oracle</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-10-06T04:55:11.751Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></span></div><div class="content">ERROR: ORA-01034: ORACLE not available ORA-27101: shared memory realm does not exist 进程 ID: 0 会话 ID: 0 序列号: 0
+123sqlplus /nologconnect / as sysdbastartup
+
+
+
+
+
+
+
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ZBY</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zbyuser" target="_blank" title="Github"><i class="fab fa-github" style="color: #hdhfbb;"></i></a><a class="social-icon" href="/3083402283@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="小程序"/></a><div class="content"><a class="title" href="/2023/10/06/%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="小程序">小程序</a><time datetime="2023-10-06T04:55:11.780Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="社交网络群体发现研究"/></a><div class="content"><a class="title" href="/2023/10/06/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C%E7%BE%A4%E4%BD%93%E5%8F%91%E7%8E%B0%E7%A0%94%E7%A9%B6/" title="社交网络群体发现研究">社交网络群体发现研究</a><time datetime="2023-10-06T04:55:11.777Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%AE%9E%E6%88%98/" title="笔试面试实战"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="笔试面试实战"/></a><div class="content"><a class="title" href="/2023/10/06/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%AE%9E%E6%88%98/" title="笔试面试实战">笔试面试实战</a><time datetime="2023-10-06T04:55:11.774Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/xv6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="xv6操作系统"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="xv6操作系统"/></a><div class="content"><a class="title" href="/2023/10/06/xv6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="xv6操作系统">xv6操作系统</a><time datetime="2023-10-06T04:55:11.771Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/06/redis/" title="redis"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="redis"/></a><div class="content"><a class="title" href="/2023/10/06/redis/" title="redis">redis</a><time datetime="2023-10-06T04:55:11.769Z" title="Created 2023-10-06 12:55:11">2023-10-06</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">October 2023</span><span class="card-archive-list-count">20</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-10-06T05:12:23.003Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By ZBY</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
